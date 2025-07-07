@@ -22,10 +22,17 @@ const templateChoices = [
     name: "express-template-es",
     value: "git@github.com:llds66/express-template-es.git",
   },
-  { name: "nest-template", value: "git@github.com:llds66/nest-template.git" },
   {
-    name: "product-ui-template",
-    value: "git@github.com:llds66/product-ui-template.git",
+    name: "hono-template",
+    value: "git@github.com:llds66/hono-template.git",
+  },
+  {
+    name: "h-cf-template",
+    value: "git@github.com:llds66/h-cf-template.git",
+  },
+  {
+    name: "nest-template",
+    value: "git@github.com:llds66/nest-template.git"
   },
 ];
 
