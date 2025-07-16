@@ -42,6 +42,7 @@ npx @llds/template
 | 模板名称              | 仓库地址                                                   |
 | --------------------- | ---------------------------------------------------------- |
 | uonvue-template        | https://github.com/llds66/uonvue-template                 |
+| hono-cf-template       | https://github.com/llds66/hono-cf-template                |
 | express-template       | https://github.com/llds66/express-template                |
 | express-template-es    | https://github.com/llds66/express-template-es             |
 | nest-template          | https://github.com/llds66/nest-template                   |

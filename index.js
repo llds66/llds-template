@@ -15,6 +15,10 @@ const templateChoices = [
     value: "git@github.com:llds66/uonvue-template.git",
   },
   {
+    name: "hono-cf-template",
+    value: "git@github.com:llds66/hono-cf-template.git",
+  },
+  {
     name: "express-template",
     value: "git@github.com:llds66/express-template.git",
   },
@@ -25,10 +29,6 @@ const templateChoices = [
   {
     name: "hono-template",
     value: "git@github.com:llds66/hono-template.git",
-  },
-  {
-    name: "h-cf-template",
-    value: "git@github.com:llds66/h-cf-template.git",
   },
   {
     name: "nest-template",
@@ -57,8 +57,6 @@ async function run() {
     await git.clone(repoUrl, targetDir, ["--depth", "1"]);
 
     spinner.succeed(" 模板克隆成功！");
-
-    await fs.remove(path.join(targetDir, ".git"));
 
     // 最终提示
     console.log(`\n✅ 项目已创建 ${projectName}`);
