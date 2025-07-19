@@ -2,7 +2,6 @@
 
 import path from "path";
 import { input, select } from "@inquirer/prompts";
-import fs from "fs-extra";
 import ora from "ora";
 import simpleGit from "simple-git";
 import boxen from "boxen";
@@ -18,22 +17,22 @@ const templateChoices = [
     name: "hono-cf-template",
     value: "git@github.com:llds66/hono-cf-template.git",
   },
-  {
-    name: "express-template",
-    value: "git@github.com:llds66/express-template.git",
-  },
-  {
-    name: "express-template-es",
-    value: "git@github.com:llds66/express-template-es.git",
-  },
-  {
-    name: "hono-template",
-    value: "git@github.com:llds66/hono-template.git",
-  },
-  {
-    name: "nest-template",
-    value: "git@github.com:llds66/nest-template.git"
-  },
+  // {
+  //   name: "express-template",
+  //   value: "git@github.com:llds66/express-template.git",
+  // },
+  // {
+  //   name: "express-template-es",
+  //   value: "git@github.com:llds66/express-template-es.git",
+  // },
+  // {
+  //   name: "hono-template",
+  //   value: "git@github.com:llds66/hono-template.git",
+  // },
+  // {
+  //   name: "nest-template",
+  //   value: "git@github.com:llds66/nest-template.git"
+  // },
 ];
 
 async function run() {
